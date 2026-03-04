@@ -18,3 +18,5 @@ Empfohlene Rule fuer `main`:
 
 ## Hinweis
 Nach Aktivierung kann niemand mehr direkt nach `main` pushen (ausser explizit erlaubte Rollen).
+## Aktueller Zustand
+Da derzeit nur ein Entwickler an diesem Projekt arbeitet, ist der Pull-Request-Schutz aktuell nicht aktiviert. Wenn zukuenftig weitere Mitwirkende hinzukommen, sollte die Schutzregel wieder aktiviert werden.
