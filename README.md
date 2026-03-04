@@ -1,29 +1,28 @@
 # my_Transformer
 
-Python project scaffolded analog to `my_OnCall_Manager` with a clean Git/GitHub workflow.
+Python-Projekt mit Basis-Setup (Packaging, Linting, Tests, CI) analog zu `my_OnCall_Manager`.
 
 ## Quickstart
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -U pip
-pip install -r requirements-dev.txt
+python -m pip install --upgrade pip
+pip install -e .[dev]
 pytest
 ```
 
-## Structure
+## Struktur
 
-- `src/my_transformer/` application code
-- `tests/` test suite
-- `docs/how_to/` team how-tos
-- `scripts/` helper scripts
+- `src/my_transformer/` Anwendungscode
+- `tests/` Test-Suite
+- `docs/how_to/` Team-How-Tos
+- `scripts/` Hilfsskripte
 
-## GitHub setup
+## CI
 
-After local init, add remote and push:
+Bei Push/PR laeuft GitHub Actions mit:
+- `ruff check .`
+- `pytest`
 
-```bash
-git remote add origin <GITHUB_REPO_URL>
-git push -u origin main
-```
+Workflow-Datei: `.github/workflows/ci.yml`
